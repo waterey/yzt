@@ -1,0 +1,16 @@
+C:\Users\waterey\.jenkins\secrets\initialAdminPassword
+
+
+http://f1361db2.m.daocloud.io
+
+docker-machine ssh default
+sudo sed -i "s|EXTRA_ARGS='|EXTRA_ARGS='--registry-mirror=http://f1361db2.m.daocloud.io |g" /var/lib/boot2docker/profile
+exit
+docker-machine restart default 
+
+
+
+http://192.168.124.12:8080/yzt_jenkins
+ÕËºÅ£ºadmin	
+ÃÜÂë£ºadmin
+ÓÃ»§Ãû£ºadmin
